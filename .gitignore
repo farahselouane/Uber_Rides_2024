@@ -44,19 +44,19 @@ venv.bak/
 *.sublime-project
 *.sublime-workspace
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
+# Jupyter Notebook cache only (keep .ipynb files!)
+.ipynb_checkpoints/
 
 # Environment Variables
 .env
 .env.local
 .env.*.local
 
-# Data Files (processed data can be regenerated)
-data/processed/
+# Data Files - KEEP PROCESSED DATA FOR REPRODUCIBILITY
+# data/processed/ is INCLUDED in git (contains cleaned data)
+data/raw/          # Large raw data files (if any)
 *.csv.bak
-*.xlsx
+*.xlsx.bak
 
 # Logs & Temporary
 *.log
